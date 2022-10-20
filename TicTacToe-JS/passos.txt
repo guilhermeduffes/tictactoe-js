@@ -1,0 +1,59 @@
+AT 1 (OK)- Arrumando o tabuleiro. (Bronze)
+O tabuleiro do jogo já está pronto, mas não aparece como desejado. Mas não se preocupe, as classes css já estão prontas, basta você usá-las no html.
+--------------------------------------
+AT 2 (OK) - Indicando possível interação com o tabuleiro. (Bronze)
+Agora, é necessário que o jogador possa ter a ideia de que, ao passar o cursor por alguma casa do tabuleiro, ele possa estar confiante de que o mesmo possa ser clicado. Então, implemente uma classe css para que, quando o cursor do mouse passe por alguma casa, ela mude de cor e o icone do cursor fique como um pointer.
+--------------------------------------
+AT 3 (OK) - Interagindo com o tabuleiro. (Bronze)
+Uma vez que o usuário já tem a percepção de que pode interagir com cada casa do tabuleiro, implemente o evento de click para cada uma das casa, de forma que, ao ser clicada, uma das casas, que seja exibido um alert indicando o número da casa clicada. Considere a primeira casa como a que está no canto esquerdo, na parte superior; a nona e última casa está no canto direito, na parte inferior.
+--------------------------------------
+AT 4 (OK) - Marcando a casa selecionada. (Bronze)
+Agora que o usuário pode selecionar uma casa, implemente, na função criada na tarefa anterior, o script necessário para preencher a casa selecionada com um X.
+
+Lembre-se que é possível acessar o elemento clicado com a variável event, passada na chamada da função, no elemento html.
+
+Exemplo:
+
+index.html
+
+  <span onclick=”marcarCasa(event, 1)” >
+script.js
+
+  function marcarCasa(event, numCasa){
+    const elemento = event.target;
+    //…
+  }
+--------------------------------------
+AT 5 (OK) - Marcando a casa selecionada com X ou O. (Bronze)
+Agora que o usuário pode selecionar uma casa, implemente, na função criada na tarefa anterior, o script necessário para preencher a casa selecionada com um X ou um O, de acordo com o turno.
+
+Lembre-se que é possível acessar o elemento clicado com a variável event, passada na chamada da função, no elemento html.
+--------------------------------------
+AT 6 - Indicar o jogador da vez. (Bronze)
+Como já podemos saber qual o marcador que será apresentado na casa clicada, agora podemos também indicar quem é o jogador da vez.
+
+Use o span com o id sJogadorDaVez para indicar esta informação.
+--------------------------------------
+AT 7 (OK) - Bloqueando a casa já marcada. (Bronze)
+O jogador já pode marcar a casa, agora é necessário bloquear as casas que já foram marcadas. Complemente o algoritmo para permitir apenas que casas vazias possam ser marcadas.
+
+Você pode criar variáveis de controle para indicar se uma casa já está marcada ou não, usando o valor 0 para indicar uma casa vaga.
+
+Outra sugestão é usar um switch para verificar a casa que está sendo clicada.
+--------------------------------------
+AT 8 (OK) - Verificando vitória em linha. (Bronze)
+Agora é necessário verificar se alguma linha de casas foi preenchida por um mesmo jogador. Para isso, é importante que a casa marcada guarde a informação do jogador que marcou a mesma.
+
+Uma dica é usar o número 1 para o primeiro jogador e o número 2 para o segundo jogador.
+
+Então crie uma função que verifique se alguma linha do tabuleiro foi marcada pelo mesmo jogador.
+--------------------------------------
+AT 9 (OK) - Verificando vitória em coluna. (Bronze)
+Agora é necessário verificar se alguma coluna de casas foi preenchida por um mesmo jogador. Para isso, é importante que a casa marcada guarde a informação do jogador que marcou a mesma.
+
+Aproveite as dicas do passo anterior.
+--------------------------------------
+AT 10 (OK) - Verificando vitória em diagonal. (Bronze)
+Agora é necessário verificar se alguma diagonal de casas foi preenchida por um mesmo jogador. Para isso, é importante que a casa marcada guarde a informação do jogador que marcou a mesma.
+
+Aproveite as dicas do passo anterior.

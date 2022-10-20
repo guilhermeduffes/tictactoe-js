@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+    <header>
+        <h1>-</h1>
+        <h2></h2>
+    </header>
+    <main>
+        <div id="centroJogador">
+            <p id="sJogadorDaVez2">Jogador da vez: <span id="sJogadorDaVez">Bolinha</span> </p>
+        </div>
+        <div class="tile-row">
+            <span class="tile tile-slide coluna1 linha1 " onclick="selecionarCasa(event, 0)"></span>
+            <span class="tile tile-slide coluna2 linha1 " onclick="selecionarCasa(event, 1)"></span>
+            <span class="tile tile-slide coluna3 linha1 " onclick="selecionarCasa(event, 2)"></span>
+            <span class="tile tile-slide coluna1 linha2 " onclick="selecionarCasa(event, 3)"></span>
+            <span class="tile tile-slide coluna2 linha2 " onclick="selecionarCasa(event, 4)"></span>
+            <span class="tile tile-slide coluna3 linha2 " onclick="selecionarCasa(event, 5)"></span>
+            <span class="tile tile-slide coluna1 linha3 " onclick="selecionarCasa(event, 6)"></span>
+            <span class="tile tile-slide coluna7 linha3 " onclick="selecionarCasa(event, 7)"></span>
+            <span class="tile tile-slide coluna3 linha3 " onclick="selecionarCasa(event, 8)"></span>
+        </div>
+        <button class="reiniciar" onclick="reiniciarJogo"> </button>
+
+    </main>
+    <div>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
